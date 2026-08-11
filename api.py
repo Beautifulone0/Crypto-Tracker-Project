@@ -21,16 +21,11 @@ def get_crypto(crypto_id):
     crypto = data[0]
 
     return{
-       f"Name:", crypto["name"],
-       "Symbol:", crypto["symbol"],
-       "Price:", crypto["current_price"],
-       "Market Cap:", crypto["market_cap"],
-       "24h Change:", crypto["price_change_percentage_24h"]
+       "name" : crypto["name"],
+       "symbol" : crypto["symbol"],
+       "price" : crypto["current_price"],
+       "market Cap" : crypto["market_cap"],
+       "24h change" : crypto["price_change_percentage_24h"]
     }
   except requests.exceptions.RequestException:
     return None
-
-
-result = get_crypto("solana")
-
-print(result)
