@@ -1,0 +1,1 @@
+from api import get_crypto(crypto_id)
