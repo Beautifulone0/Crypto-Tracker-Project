@@ -29,3 +29,4 @@ def get_crypto(crypto_id):
     }
   except requests.exceptions.RequestException:
     return None
+    

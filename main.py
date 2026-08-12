@@ -1,3 +1,5 @@
+import requests
+
 from api import get_crypto
 
 
